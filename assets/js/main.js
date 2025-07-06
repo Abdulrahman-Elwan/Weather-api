@@ -124,12 +124,13 @@ function renderForecastWeather(){
         `
         content += cartona;
 
-        dataWeather.innerHTML = content;
+        
     });
 }
 function weather() {
     content = ``;
     renderCurrentWeather();
     renderForecastWeather();
+    dataWeather.innerHTML = content;
 };
 knowLocation();
