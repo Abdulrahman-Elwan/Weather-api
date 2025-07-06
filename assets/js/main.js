@@ -38,14 +38,14 @@ function renderCurrentWeather(){
         let apiVal = JSON.parse(myHttp.response);
         const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        let d = new Date(apiVal);
-        console.log();
+        let d = new Date(apiVal.current.last_updated);
+
         let cartona = `
             <div class="col-md-4 d-flex">
                 <div class="weather-card h-100 w-100 d-flex flex-column">
                     <div class="day d-flex justify-content-between text-white text-opacity-75">
                         <span class="day text-end">${days[(d.getDay() + 1) % 7]}</span>
-                        <span class="day text-end">${(d.getDay())}${month[d.getMonth()]}</span>
+                        <span class="day text-end">${(d.getDate())}${month[d.getMonth()]}</span>
                     </div>
                     <div class="dataWeather pt-5 ps-4 pb-4 flex-grow-1 d-flex flex-column justify-content-between">
                         <div class="d-flex flex-column align-items-start">
