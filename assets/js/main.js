@@ -39,7 +39,7 @@ function renderCurrentWeather(){
         const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         let d = new Date();
-
+        console.log(d.getDay());
         let cartona = `
             <div class="col-md-4 d-flex">
                 <div class="weather-card h-100 w-100 d-flex flex-column">
