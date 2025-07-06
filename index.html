@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather api</title>
+    <link rel="icon" href="assets/image/logo@2x.png">
+    <!-- fonts google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- main file CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="web">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-lg-5 py-0 py-lg-4">
+                <div class="container px-lg-5 py-3">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                        <img src="assets/image/logo@2x.png" alt="weather api logo">
+                        <div class="brand_text d-flex flex-column">
+                            <h1 class="fs-6 m-0">
+                                Weather
+                            </h1>
+                            <span class="text-secondary m-0">tagline goes here</span>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-4 mt-lg-0">
+                            <li class="nav-item mx-1">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#">News</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#">Live Cameras</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#">Photos</a>
+                            </li>
+                            <li class="nav-item mx-1">
+                                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="search_div">
+                    <div class="container pt-4">
+                        <div class="search px-lg-5 pt-5">
+                            <div class="position-relative">
+                                <input type="text"
+                                    class="form-control bg-dark p-3 rounded-5 fs-6 text-light shadow-none border-0"
+                                    placeholder="Find your location..." name="inputSearch" id="inputSearch">
+                                <button
+                                    class="btn btn-info text-white fs-5 fw-bold px-5 rounded-5 position-absolute findLocation"
+                                    id="findLocation">Find</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grad_weather px-lg-5">
+                    <div class="container">
+                        <div class="row text-center g-0" id="dataWeather"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer p-3 py-lg-5">
+            <div class="subscribe-box">
+                <input type="email" placeholder="Enter your email to subscribe...">
+                <button type="button">Subscribe</button>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+
+            <div class="footer-text">
+                Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </div>
+        </footer>
+    </div>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/68a405ef08.js" crossorigin="anonymous"></script>
+    <!-- bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- main file JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

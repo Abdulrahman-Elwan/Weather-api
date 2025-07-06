@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #262936;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.brand_text span {
+    font-size: 13px;
+}
+
+.navbar-nav .nav-link,
+.navbar-nav .show>.nav-link {
+    color: #ffffff;
+    padding: 2px 30px !important;
+    font-size: 15px;
+    border: 2px solid;
+    border-color: transparent;
+    transition: all 0.7s ease;
+    border-radius: 20px;
+}
+
+.navbar-nav .nav-link.active,
+.nav-link:focus,
+.nav-link:hover,
+.navbar-nav .show>.nav-link {
+    border-color: #009ad8;
+    color: #009ad8;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.fa-bars {
+    color: #ffffff;
+}
+
+section {
+    position: relative;
+}
+
+.search_div {
+    min-height: 55vh !important;
+    background-image: url(../image/banner.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.search .findLocation {
+    top: 6px;
+    right: 7px;
+}
+
+.search{
+    padding-top: 8rem !important;
+}
+.weather-card .day {
+    padding: 5px 10px;
+}
+
+.weather-card {
+    background-color: #2d2f3b;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.weather-icon {
+    font-size: 48px;
+    color: #ffc107;
+}
+
+.small-info {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.temp {
+    font-size: 80px;
+}
+
+sup{
+    position: relative;
+    top: -55px;
+}
+sub{
+    position: relative;
+    top: -13px;
+}
+
+.weather-card .day {
+    background-color: #2d303d;
+}
+
+.grid2 .day {
+    background-color: #222530;
+}
+
+.weather-card .dataWeather {
+    background-color: #323544;
+}
+
+.grid2 .dataWeather {
+    background-color: #262936;
+}
+
+section .grad_weather {
+    width: 100%;
+    position: relative;
+    top: -100px;
+}
+
+
+.footer {
+    background-color: #1b1e2b;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.subscribe-box {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    display: flex;
+    border-radius: 50px;
+    background-color: #1f2330;
+    overflow: hidden;
+}
+
+.subscribe-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 15px 20px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.subscribe-box input::placeholder {
+    color: #888;
+}
+
+.subscribe-box button {
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 0 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    height: 40px;
+    margin: auto 8px;
+}
+
+.subscribe-box button:hover {
+    background-color: #00a6d1;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 8px;
+    font-size: 20px;
+    background-color: #1f2330;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #00bfff;
+    color: #fff;
+}
+
+.footer-text {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 14px;
+}
