@@ -122,11 +122,8 @@ function renderForecastWeather(){
             </div>
         `
         content += cartona;
-
-        
+        dataWeather.innerHTML = content;
     });
-    
-    dataWeather.innerHTML = content;
 }
 function weather() {
     content = ``;
