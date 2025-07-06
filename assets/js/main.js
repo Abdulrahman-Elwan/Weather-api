@@ -26,7 +26,6 @@ function knowLocation(){
     myHttpLocation.send();
     myHttpLocation.addEventListener('load' , ()=>{
         dataJsonlocation = JSON.parse(myHttpLocation.response);
-        console.log(dataJsonlocation.location.name)
         selectedCity = dataJsonlocation.location.name;
         weather();
     });
@@ -126,11 +125,12 @@ function renderForecastWeather(){
 
         
     });
+    
+    dataWeather.innerHTML = content;
 }
 function weather() {
     content = ``;
     renderCurrentWeather();
     renderForecastWeather();
-    dataWeather.innerHTML = content;
 };
 knowLocation();
