@@ -87,7 +87,7 @@ function renderForecastWeather(){
     tomoroMyHttp.addEventListener('load', () => {
         let apiVal2 = JSON.parse(tomoroMyHttp.response);
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        let d = new Date();
+        let d = new Date(apiVal.current.last_updated);
 
         let cartona = `
             <div class="col-md-4 d-flex grid2">
