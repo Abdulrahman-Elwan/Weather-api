@@ -32,7 +32,7 @@ function knowLocation(){
 }
 function renderCurrentWeather(){
     let myHttp = new XMLHttpRequest();
-    myHttp.open('GET', `http://api.weatherapi.com/v1/current.json?key=086035bdb54f41ee84b83802250307&q=${selectedCity}`);
+    myHttp.open('GET', `https://api.weatherapi.com/v1/current.json?key=086035bdb54f41ee84b83802250307&q=${selectedCity}`);
     myHttp.send();
     myHttp.addEventListener('load', () => {
         let apiVal = JSON.parse(myHttp.response);
